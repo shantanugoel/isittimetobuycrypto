@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Is It Time To Buy Crypto Right Now?</title>
+  <meta charset="utf-8"> 
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1"> 
+</head>
+  <body>
+<h1 style="text-align:center;">Is it time to buy crypto right now?</h1>
+
+<h2 style="text-align:center;"> I've developed a unique AI model that is able to predict, with 97.5% accuracy, whether to buy any given crypto coin at the current time. For issues/feedback, lemme know at <a href="https://twitter.com/shantanugoel" target="_blank">@shantanugoel</a></h2>
+
+<div style="text-align:center;" >
+  <input type="text" placeholder="Enter coin name"></input>
+  <br /><br />
+  <button style="font-size: 150%;">Crunch The Numbers NOW!</button>
+</div>
+
+<strong><p id="example" style="text-align:center; font-size: 400%; color: red;"></p></strong>
+  
+    <script>
+    var button = document.querySelectorAll("button")[0];
+var txt = document.querySelectorAll("p")[0];
+button.addEventListener('click', function() {
+  txt.innerHTML = "Warming up AI bots...";
+  setTimeout(() => { txt.innerHTML =  "Getting data..."; }, 1000);
+  setTimeout(() => { txt.innerHTML =  "Computing...."; }, 2000);
+  setTimeout(() => { txt.innerHTML =  "Almost there...."; }, 3000);
+  setTimeout(() => { txt.innerHTML =  "NO"; }, 4000);
+}, false);
+  </script>
+  </body>
+</html>
