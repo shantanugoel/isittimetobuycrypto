@@ -13,7 +13,7 @@
 
 <div style="text-align:center;" >
   <a href="https://github.com/shantanugoel/isittimetobuycrypto/" target="_blank">See the code</a> <a href="https://twitter.com/intent/retweet?tweet_id=1407750733986893827" target="_blank">Tell Others</a> <br /> <br />
-  <input type="text" placeholder="Enter coin name"></input>
+  <input type="text" placeholder="Enter coin name" id="input"></input>
   <br /><br />
   <button style="font-size: 150%;">Crunch The Numbers NOW!</button>
 </div>
@@ -28,7 +28,12 @@ button.addEventListener('click', function() {
   setTimeout(() => { txt.innerHTML =  "Getting data..."; }, 1000);
   setTimeout(() => { txt.innerHTML =  "Computing...."; }, 2000);
   setTimeout(() => { txt.innerHTML =  "Almost there...."; }, 3000);
-  setTimeout(() => { txt.innerHTML =  "NO"; }, 4000);
+
+  var answer = "NO";
+  var input = document.getElementById('input').value;
+  var input_lower = input.toLowerCase();
+  if (input_lower.includes("shantanu") || input_lower.includes("goel")) { answer = "YES! Anytime is a good time to buy " + input; }
+  setTimeout(() => { txt.innerHTML =  answer; }, 4000);
 }, false);
   </script>
   </body>
